@@ -1,0 +1,27 @@
+---
+layout: post
+title: Migrating to Jekyll
+tags: 
+ - rambles
+---
+
+<p><i>Push factors</i>: My WordPress blog just seemed very cluttered to me, both the CMS and the blog itself. The latter would have been fairly simply rectified; I could have played around with the layout and design. The CMS provided a lot more options than I really needed. </p>
+
+<p>I was also getting a ridiculously large amount of spam, which I half-heartedly tried to combat with plug-ins like Askimet, to little avail. Installing Disqus seemed like a good idea, since they have their own anti-spam system, but it was a lot of work for a blog I was unhappy with anyway.</p>
+
+<p><i>Pull factors</i>: Jekyll is just unabashedly cool. It's a lot simpler and more straight-forward to implement your own layout. Though it doesn't have a pretty GUI like WordPress, Jekyll is organised by design; it parses through the front-matter of each page and fishes the required layout from the <i>_layouts</i> folder and encourages the use of includes to eliminate repeated code.</p>
+
+<p>Dmitry and I (but mostly Dmitry) set up things server-side a little while back; "we" got nginx running, and installed Ruby and Jekyll. In my free time, I fiddled with layout ideas on Photoshop.</p>
+
+<center><p><img src='/images/layoutidea01.jpg' width='450px' height='250px' title='Old layout idea.' /></p>
+
+<p><img src='/images/layoutidea02.jpg' title='Old layout idea.' /></p>
+
+<p><img src='/images/layoutidea03.jpg' title='Current layout.' /></p>
+</center>
+
+<p>I'm not used to designing more modern, Web 2.0-facing layouts, so it was quite a process. I fiddled with colour palettes on <a href='http://colourlovers.com'>COLOURlovers</a>, and the second and current layout actually use the same colours.</p>
+
+<p>Implementing the layout was far easier in comparison. Google Fonts provides awesome open-source fonts for use on websites, which are used in the header and titles. After whipping up a sample page in HTML and CSS, I split it up according to Jekyll's needs and spiced it up with some <a href='http://liquidmarkup.org'>Liquid</a>. And voil&agrave;! A relatively organised codebase. Implementing the rest of the pages, such as the <a href='/about/'>About</a> and <a href='/archive/'>Archive</a> pages were a synch, since they purely reuse code. Then it was simply a matter of embedding Disqus on a few pages.</p>
+
+<p>There you have it - a Jekyll site made in about a day. And it doesn't look too bad to me!</p>

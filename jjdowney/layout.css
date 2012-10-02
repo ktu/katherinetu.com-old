@@ -1,0 +1,136 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+.logo {
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	right: 28%;
+	padding-top: 30px;
+	text-align: center;
+	font-family: 'Arial';
+	text-transform: uppercase;
+	color: #CF3A00; /*blood orange*/
+}
+
+.first_name {
+	font-size: 25px;
+	line-height: 10px;
+	font-weight: 100;
+	margin: 0px;
+	padding: 0px;
+	}
+
+.last_name {
+	color: #CF3A00; /*blood orange*/
+	font-size: 45px;
+	font-weight: 100;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+.right {
+	width: 23%;
+	min-height: 100%;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	text-align: center;
+	background-color: #D0D0D0;
+	background-image: url('background-2.jpg');
+	background-position: top left;
+	background-repeat: no-repeat;
+	-moz-box-shadow: inset 5px 0 5px #BDBDBD;
+	-webkit-box-shadow: inset 5px 0 5px #BDBDBD;
+	box-shadow: inset 5px 0 5px #BDBDBD;
+}
+	
+.navigation {
+	padding-top: 350px;
+	text-align: left; 
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Arial';
+	font-size: 14px;
+}
+
+.navigation p {
+	width: 170px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0px;
+	margin-bottom: 5px;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-bottom-color: #A2A2A2;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: #7A7A7A; 
+}
+
+.navigation a:hover {
+}
+
+.navigation p:hover {
+	text-shadow: 2px 2px 1px #BDBDBD;
+}
+
+
+.social {
+	padding-top: 100px;
+}
+
+.social img {
+	margin-left: 10px;
+}
+
+.main {
+	position: absolute;
+	right: 28%;
+	max-width: 55%;
+	min-width: 300px;
+	padding-top: 200px;
+}
+
+.title {
+	text-align: left;
+	font-family: 'Lora', 'Serif';
+	font-size: 30px;
+	color: #D46337;
+	letter-spacing: 1px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.title p {
+	margin: 0px;
+	margin-bottom: 40px;
+	padding: 0;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-bottom-color: #A2A2A2;
+}
+
+.text {
+	font-family: 'Arial';
+	text-align: left;
+	line-height: 25px;
+	font-size: 13px;
+	color: #676767; 
+	margin: 0px;
+	padding: 0px;
+}
+
+.main a {
+	color: #30AE83;
+	text-decoration: underline;
+}
+
+.main a:hover {
+	text-decoration: none;
+}

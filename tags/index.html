@@ -1,0 +1,81 @@
+---
+layout: base
+title: Posts by Tags
+tags: 
+ - computer science
+ - doodles
+ - inspiration
+ - linguistics
+ - literature
+ - quotations
+ - rambles
+ - reblog
+ - school
+---
+
+		
+<div class='main'>
+
+	{% for tag in page.tags %}
+	<table><tr><td><br /></tr></td></table>
+
+	<h1><a name='{{ tag }}'>{{ tag }}</a></h1>
+
+	<table class='post' width='100%'>
+		{% case tag %}
+
+		{% when 'computer science' %}
+			{% for post in site.tags."computer science" %}
+			{% include tagHelper.html %}
+			{% endfor %}
+
+	
+		{% when 'doodles' %}
+			{% for post in site.tags.doodles %}
+			{% include tagHelper.html %}
+			{% endfor %}	
+
+
+		{% when 'inspiration' %}
+			{% for post in site.tags.inspiration %}
+			{% include tagHelper.html %}
+			{% endfor %}	
+
+		{% when 'linguistics' %}
+			{% for post in site.tags.linguistics %}
+			{% include tagHelper.html %}
+			{% endfor %}	
+
+		{% when 'literature' %}
+			{% for post in site.tags.literature %}
+			{% include tagHelper.html %}
+			{% endfor %}	
+
+		{% when 'quotations' %}
+			{% for post in site.tags.quotations %}
+			{% include tagHelper.html %}
+			{% endfor %}	
+
+		{% when 'rambles' %}
+			{% for post in site.tags.rambles %}
+			{% include tagHelper.html %}
+			{% endfor %}	
+
+		{% when 'reblog' %}
+			{% for post in site.tags.reblog %}
+			{% include tagHelper.html %}
+			{% endfor %}	
+
+		{% when 'school' %}
+			{% for post in site.tags.school %}
+			{% include tagHelper.html %}
+			{% endfor %}
+	
+		{% endcase %}
+	</table>
+
+	{% endfor %}
+
+
+</div>
+

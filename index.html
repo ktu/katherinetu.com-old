@@ -1,0 +1,50 @@
+---
+layout: base
+title: Test
+---
+
+		
+{% for post in site.posts limit:1 %}
+
+<div class='main'>
+	<h1>
+
+		{{ post.title }}
+	</h1>
+
+	<span class='post'>
+
+		{{ post.content }}
+	</span>
+
+	<table class='postFoot'><tr>
+
+		<td class='postFootLeft'>
+			<i>{{ post.date | date_to_long_string }}</i>
+		</td>
+
+		<td class='postFootRight'>tags:  
+		{% for t in post.tags %}
+	<a href=''>{{ t }}</a>{% if forloop.last == false %}, {% endif %}
+		{% endfor %}<br />
+
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'katherinetu'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<a href="{{ post.url }}#disqus_thread"></a>
+	</td></tr></table>
+
+{% include blurbs.html %} 
+{% endfor %}
+
+</div> 

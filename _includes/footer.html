@@ -1,0 +1,28 @@
+		<div class='footerWrapper'>
+			<span class='footer'>
+				<img id='footerimg' /> <br />
+				Copyright &copy; Katherine Tu 2012. 
+				Licensed under the <a href="http://creativecommons.org/licenses/by/2.5/ca/">Creative Commons Attribution 2.5 License.</a>
+				</span>
+		</div>
+		
+	</body>
+	
+	<script type='text/javascript'>
+			randInt = Math.random();
+			if (randInt < 0.15) {
+				document.getElementById('footerimg').src='/images/octocat-light.png';
+			} else if (randInt < 0.35 && randInt >= 0.15 ) {
+				document.getElementById('footerimg').src='/images/footer-bird01.png';
+			} else if (randInt < 0.55 && randInt >= 0.35 ) {
+				document.getElementById('footerimg').src='/images/footer-bird02.png';
+			} else if (randInt < 0.75 && randInt >= 0.55 ) {
+				document.getElementById('footerimg').src='/images/footer-bird03.png';
+			} else if (randInt < 0.85 && randInt >= 0.75) {
+				document.getElementById('footerimg').src='/images/footer-dolphin.png';
+			} else {
+				document.getElementById('footerimg').src='/images/footer-muffin01.png';
+			}
+	</script>
+
+</html>
